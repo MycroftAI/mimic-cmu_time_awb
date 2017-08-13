@@ -38,8 +38,6 @@
 /*                                                                       */
 /*************************************************************************/
 
-#include "config.h"
-
 #include <string.h>
 #include "mimic.h"
 #include "cst_clunits.h"
