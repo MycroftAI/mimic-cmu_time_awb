@@ -34,9 +34,6 @@
 /*************************************************************************/
 
 #include "cmu_time_awb.h"
-
-#ifndef ENABLE_CMU_TIME_AWB_BUILTIN
 #include "cst_plugins.h"
 mimic_plugin_t mimic_plugin = { "voice_cmu_us_slt", 0, &voice_cmu_time_awb_plugin_init, &voice_cmu_time_awb_plugin_exit};
-#endif
 
