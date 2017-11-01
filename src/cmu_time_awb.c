@@ -116,12 +116,12 @@ static char *cmu_time_awb_unit_name(cst_item *s)
 	return clunits_ldom_phone_word(s);
 }
 
-void voice_cmu_time_awb_plugin_init()
+void voice_cmu_time_awb_plugin_init(mimic_context *ctx)
 {
-   mimic_voice_list = cons_val(voice_val(register_cmu_time_awb(NULL)), mimic_voice_list);
+   mimic_voice_add(ctx, register_cmu_time_awb(NULL));
 }
 
-void voice_cmu_time_awb_plugin_exit()
+void voice_cmu_time_awb_plugin_exit(mimic_context *ctx)
 {
 }
 
